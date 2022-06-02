@@ -23,8 +23,9 @@ $result = $connection->query('SELECT * FROM `plaatsen` ')
 
     <?php foreach($result as $row): ?>
     <article class="card">
+        <h2><?php echo $row['titel'];?></h2>
         <figure class="card__figure">
-            <img src="/img/ring.JPG" alt="dure ring">
+            <img src="/img/<?php echo $row['foto'];?>" alt="dure ring">
         </figure>
 
         <section class="card__body">
@@ -32,8 +33,8 @@ $result = $connection->query('SELECT * FROM `plaatsen` ')
             <header>
                 <h2 class="card__heading">Dure ring</h2>
             </header>
-            <em>400</em>
-            <p class="card__p">Hele dure ring</p>
+            <em><?php echo $row['prijs'];?></em>
+            <p class="card__p"><?php echo $row['beschrijving'];?></p>
             
         </section>
    </article>
