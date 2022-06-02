@@ -2,6 +2,8 @@
 require 'functions.php';
 $connection = dbConnect();
 
+$result = $connection->query('SELECT * FROM `plaatsen` ')
+
 ?>
 
 
@@ -19,6 +21,7 @@ $connection = dbConnect();
 
 <body>
 
+    <?php foreach($result as $row): ?>
     <article class="card">
         <figure class="card__figure">
             <img src="/img/ring.JPG" alt="dure ring">
@@ -34,6 +37,8 @@ $connection = dbConnect();
             
         </section>
    </article>
+   
+   <?php endforeach; ?>
 </body>
 
 </html>
