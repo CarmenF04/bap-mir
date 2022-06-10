@@ -47,12 +47,12 @@ $jewellery = $statement->fetch(PDO::FETCH_ASSOC);
         <section>
             <article class="jewellery-info">
                 <header>
-                    <h2>Ring</h2>
-                    <h3>Edelsteen</h3>
+                    <h2><?php echo $jewellery['titel']?></h2>
+                    <h3><?php echo $jewellery['beschrijving']?></h3>
                 </header>
                 <figure">
-                <img src="/img/ring.jpg" alt="">
-                    <em>€ 20.95</em>
+                <img src="img/<?php echo $jewellery['foto']?>" alt="">
+                    <em><?php echo $jewellery['prijs']?></em>
                 </figure>
                 <p>
                     Beschrijving

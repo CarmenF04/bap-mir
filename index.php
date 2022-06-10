@@ -39,7 +39,8 @@ $result = $connection->query('SELECT * FROM `sieraden` ')
             <em><?php echo $row['prijs'];?></em>
             <p class="card__p"><?php echo $row['beschrijving'];?></p>
             
-            <a href="details.php">Meer info</a>
+            <a href="details.php?id=<?php echo $row['id']; ?>">Meer info</a>
+            
             
         </section>
    </article>
