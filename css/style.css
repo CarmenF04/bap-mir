@@ -20,6 +20,14 @@ img{
     height: auto;
 }
 
+.container {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .card__body{
     height: 50%;
     width: 100%;
@@ -112,4 +120,45 @@ h2{
     font-size: 1.6rem;
 }
 
+.contact {
+    background-color: white;
+    padding: 2rem;
+}
+
+.contact h2 {
+    margin-bottom: 2rem;
+}
+
+.form__field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.form__field label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form__field input,
+.form__field textarea {
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.form__button {
+    background:rgb(134, 134, 171);
+    padding: 1rem 2rem;
+    color: #ffffff;
+    display: inline-block;
+}
+
+.forms-error{
+    color: rgb(0, 0, 0);
+    background-color: aqua;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+}
  

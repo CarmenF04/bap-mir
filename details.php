@@ -50,6 +50,9 @@ $jewellery = $statement->fetch(PDO::FETCH_ASSOC);
                     <h2><?php echo $jewellery['titel']?></h2>
                     <h3><?php echo $jewellery['beschrijving']?></h3>
                 </header>
+                <hr>
+                <a href="contact.php" class="link-button">neem contact op</a>
+                <hr>
                 <figure">
                 <img src="img/<?php echo $jewellery['foto']?>" alt="">
                     <em><?php echo $jewellery['prijs']?></em>
